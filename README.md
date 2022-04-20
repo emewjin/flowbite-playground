@@ -39,3 +39,5 @@ https://flowbite.com/docs/getting-started/react/
 
 - 이슈 : route 변경 이후 모달이 동작하지 않음 - 이거 다른 컴포넌트도 마찬가지인듯
   - 리액트 버전이 정식 출시되면 해결될 문제인데 이걸 지금 우리가 해결하는데 시간을 써야 하나? 아깝다
+  - 분명한 에러 상황인데 콘솔에 찍히는 것도 없다........
+  - 같은 이슈로 보이는 것을 발견 : https://github.com/themesberg/flowbite/issues/86
