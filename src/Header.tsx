@@ -5,6 +5,9 @@ const NAV = [
   { title: 'modal', path: '/modal' },
 ];
 
+/**
+ * 모바일 미디어쿼리에서 보여지는 모바일메뉴
+ */
 function MobileRightMenu() {
   return (
     <button
@@ -41,12 +44,11 @@ export default function Header() {
           <a href="https://flowbite.com" className="flex items-center">
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
           </a>
-          {/* 모바일 미디어쿼리에서 보여지는 모바일메뉴 */}
           <MobileRightMenu />
           <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               {NAV.map(({ title, path }) => (
-                <li>
+                <li key={title}>
                   <Link to={path} className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">
                     {title}
                   </Link>

@@ -21,7 +21,21 @@ https://flowbite.com/docs/getting-started/react/
 - aria 라벨을 적극 사용하고 있어 접근성 측면에선 긍정적
 
 ## flowbite 컴포넌트
+- 레이아웃은 무료 버전이라 없는건가?
+
+### 네비게이션
+- 이슈
+  - react-dom과의 충돌 : svg 관련 프로퍼티
+  ```
+  //react-dom.development.js:67
+  Warning: Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+
+  Warning: Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+  ```
 ### 모달
 - 사용법 : 아래 두 개가 필수인데 까먹더라도 `Flowbite JavaScript` will still set it up for you as a fallback.
   - `data-modal-toggle="modalId"` data attribute를 꼭 넣어야 한다. modalId는 보여줄 모달의 아이디.
   - `aria-hidden="true"` 도 꼭 넣어주어야 한다. 그래야 기본적으로 모달이 숨김처리 되고, 플로우바이트가 모달이 숨겨졌는지 안 숨겨졌는지 알 수 있음
+
+- 이슈 : route 변경 이후 모달이 동작하지 않음 - 이거 다른 컴포넌트도 마찬가지인듯
+  - 리액트 버전이 정식 출시되면 해결될 문제인데 이걸 지금 우리가 해결하는데 시간을 써야 하나? 아깝다
