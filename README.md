@@ -1,3 +1,6 @@
+리액트 가상돔 업데이트시 플로우바이트 미작동 문제로 인해 공식 출시 전까지 무기한 보류
+
+
 ## React router dom 6
 - Switch가 Routes로 바뀜
 - exact 삭제
